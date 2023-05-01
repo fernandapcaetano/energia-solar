@@ -1,0 +1,145 @@
+:root{
+    --azul-escuro:  #1F232C;
+    --amarelo: #EFC501;
+    --sombra-texto: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    --sombra-elemento: 3px 6px 4px 3px rgba(0, 0, 0, 0.25);
+    --branco: #fff;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../css/fonte/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+body{
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+    
+}
+nav .esquerda{
+    display: flex;
+    align-items: center;
+    color: var(--amarelo);
+}
+nav .esquerda h1{
+    font-size: 36px;
+    margin-left: 6px;
+    text-shadow: var(--sombra-texto);
+}
+nav .direita{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+nav .direita ul{
+    display: flex;
+    align-items: center;
+
+    list-style: none;
+}
+nav .direita ul li{
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 16px;
+}
+nav .direita button{
+    width: 198px;
+    height: 41px;
+    background-color: var(--amarelo);
+    border: none;
+    border-radius: 20px;
+    color: var(--azul-escuro);
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+main{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+
+    
+}
+main .esquerda h1, main .esquerda h2{
+    text-transform: uppercase;
+}
+main .esquerda{
+    display: flex;
+    flex-direction: column;
+    margin-top: -45px;
+}
+main .esquerda h2{
+    color: var(--amarelo);
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+main .esquerda h3{
+    font-size: 84px;
+    margin-bottom: 10px;
+}
+main .esquerda h3 span{
+    display: block;
+    font-size: 51px;
+}
+main .esquerda p{
+    font-size: 18px;
+    width: 400px;
+    margin-bottom: 10px;
+}
+main .esquerda button{
+    width: 163px;
+    height: 41px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--amarelo);
+    margin: 0 auto;
+    margin-top: 10px;
+}
+main .esquerda button a{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--azul-escuro);
+    text-decoration: none;
+    
+}
+main .direita{
+    z-index: -1111;
+    margin-top: -46px;
+    margin-right: -14px;
+}
+main .direita img{
+    width: 50vw;
+    height: 837px;
+    object-fit: cover;
+}
+
+section{
+    margin: 30px;
+}
+section h4{
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--amarelo);
+    text-shadow: var(--sombra-texto);
+}
