@@ -18,6 +18,9 @@
     text-decoration: none;
     list-style: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
@@ -77,16 +80,168 @@ main .esquerda h3{
     display: flex;
     flex-direction: column;
     font-size: 84px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    /* padding-bottom: 10px;
+    padding-top: 10px; */
 }
 main .esquerda h3 span{
     font-size: 51px;
 }
+main .esquerda p{
+    font-weight: 700;
+    font-size: 18px;
+}
+main .esquerda a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
+    margin-top: 10px;
+    color: var(--cor-fundo);
+    font-weight: bold;
 
+    width: 163px;
+    height: 41px;
+    background: var(--cor-destaque);
+    border-radius: 20px;
+}
 main .direita{
     position: absolute;
     top: 0;
     right: 0;
     z-index: -11111;
+}
+
+section{
+    margin: 20px 40px;
+}
+section h4{
+
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--cor-destaque); 
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+section h5{
+    font-weight: 700;
+    font-size: 24px;
+}
+section h5 span{
+    color: var(--cor-destaque);
+}
+section p{
+    font-weight: 700;
+}
+section .container{
+    display: flex;
+    
+}
+section .esquerda{
+    width: 50vw;
+}
+section .direita{
+    width: 50vw;
+}
+
+section .clientes{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+section .clientes .cliente{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+    width: 236px;
+    height: 373px;
+
+    background: var(--cor-fundo);
+    box-shadow: 3px 6px 4px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+}
+section .clientes .cliente img{
+    width: 85px;
+    height: 98px;
+    object-fit: cover;
+    border: solid 2px var(--cor-destaque);
+    box-shadow: 5px 8px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+}
+.nome_cliente{
+    width: 87px;
+    height: 38px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: var(--cor-destaque);
+
+}
+.depoimento_cliente{
+    width: 194px;
+    height: 122px;
+    text-align: center;
+}
+
+section#entreemcontato{
+    height: 100vh;
+    margin: 0;
+    background-color: var(--cor-destaque);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section#entreemcontato h4{
+    color: var(--cor-fundo);
+    font-weight: 700;
+}
+section#entreemcontato h5{
+    color: var(--cor-fundo);
+    text-transform: uppercase;
+    font-size: 16px;
+}
+section#entreemcontato form{
+    margin: 0;
+    display: flex;
+    margin-top: 40px;
+}
+section#entreemcontato form .input{
+    margin-bottom: 30px;
+    margin-left: 40px;
+    position: relative;
+}
+section#entreemcontato form input{
+    background: var(--cor-fundo);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: var(--cor-texto);
+    text-transform: uppercase;
+    padding: 20px 30px;
+}
+section#entreemcontato form .input label{
+    color: var(--cor-destaque);
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+section#entreemcontato form input:focus ~ label,
+section#entreemcontato form input:valid ~ label{
+    position: absolute;
+    top: -15px;
+    color: var(--cor-fundo);
+    font-weight: bold;
 }
